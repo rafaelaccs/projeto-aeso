@@ -5,7 +5,7 @@ Rodando a aplicação:
 
 1 - Baixar no git: 
 
-git clone https://github.com/pgomes22/mean.git
+git clone https://github.com/pgomes22/projeto-aeso.git
 
 2 - Instalando as depêndencias:
 
