@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body> -->
+
+<!-- <div class="jumbotron">
+    <h1 class="text-center">Pedidos</h1>
+</div>
+
+<table>
+    <tr>
+        <th>Codigo Pedido</th>
+        <th>Mesa Pedido</th>        
+        <th>Itens Pedido</th>
+        <th>Status Pedido</th>
+        <th>Total Pedido</th>
+        <th>Usuario Pedido</th>
+    </tr>
+
+  <tr *ngFor="let foto of fotos">
+    <td>{{ foto.codigoPedido }}</td>
+    <td>{{ foto.mesaPedido }}</td>
+    <td>{{ foto.itensPedido[0].nomeProduto }}</td>
+    <td>{{ foto.statusPedido }}</td>      
+    <td>{{ foto.totalPedido }}</td>    
+    <td>{{ foto.usuarioPedido[0].nomeUsuario }}</td>
+  </tr>
+
+</table> -->
+<!-- 
+<div class="jumbotron">
+    <h1 class="text-center">Produtos</h1>
+</div> -->
+
+<table class="table">
+    <tr>
+        <th>Cód</th>
+        <th>Nome </th>
+        <th>Descrição</th>
+        <th>Itens </th>
+        <th>Categoria</th>
+        <th>Valor </th>
+        <th>Excluir</th>
+    </tr>
+    <tr *ngFor="let foto of fotos">
+        <td>{{ foto.codigoProduto }}</td>
+        <td>{{ foto.nomeProduto }}</td>
+        <td>
+            <ol *ngFor="let item of foto.itens">
+                <li>{{ item }}</li>
+            </ol>
+        </td>
+        <td>{{ foto.categoria }}</td>
+        <td>{{ foto.valorProduto }}</td>
+        <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+    </tr>
+</table>
+
+<!-- <table>
+        <tr>
+            <th>Codigo Produto</th>
+            <th>Nome Produto</th>
+            <th>Descricao Produto</th>                    
+            <th>Itens Produto</th>
+            <th>Categoria</th>
+            <th>Valor Produto</th>            
+        </tr>
+    
+      <tr *ngFor="let foto of fotos">
+        <td>{{ foto.codigoProduto }}</td>
+        <td>{{ foto.nomeProduto }}</td>
+        <td>{{ foto.descricaoProduto }}</td>        
+        <td>
+            <ol>
+                <li>{{ foto.itens[0] }}</li>
+                <li>{{ foto.itens[1] }}</li>            
+            </ol>                        
+        </td>   
+        <td>{{ foto.categoria }}</td>    
+        <td>{{ foto.valorProduto }}</td>
+      </tr>
+    
+    </table> -->
+<!-- 
+</body>
+</html> -->
