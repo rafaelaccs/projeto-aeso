@@ -6,13 +6,13 @@ Pedido.methods(['get', 'post', 'put', 'delete']);
 
 //Fala pros campos do Schema ser validado
 Pedido.updateOptions({new: true, runValidators: true});
-Pedido.updateOptions({change: true, runValidators: true});
 
 //Faz alguma coisa com a requisição antes de realizar o put no banco
 Pedido.before('put', function(req, res, next){
     console.log(req.body);
     next();
 });
+
 
 //Se houver erro, devolve um array de erros, senão devolve o objeto
 Pedido.route('count', function(req, res, next){
