@@ -1,0 +1,20 @@
+Retrospectiva:
+
+O que foi bom?
+
+-Aprendizagem de novas tecnologias como Angular, Node, Mongo, Express, Nosql e arquitetura REST.
+-Cumprimento de Prazos
+-Aprendizagem e uso de metodologia ageis e criação de documentação funcional
+-Entrosamento da equipe
+
+O que foi ruim?
+
+-Prazo Curto
+-Pouco conhecimento das tecnologias
+
+Do que foi ruim o que pode ser feito para melhorar?
+
+-Distribuir melhor as tarefas a serem realizadas.
+-Adquirir mais conhecimento nas tecnologias utilizadas.
+
+
