@@ -1,662 +1,1031 @@
 {
-	"variables": [],
-	"info": {
-		"name": "BarGenius-aeso",
-		"_postman_id": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
-		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-	},
-	"item": [
+	"id": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
+	"name": "BarGenius-aeso",
+	"description": null,
+	"order": [
+		"02dd9c7c-4473-eb1a-cca7-4551af080d94",
+		"92a879ad-85e6-0c56-5c1a-0b22e63c79a5",
+		"5036d78d-0bb3-396f-a232-a9678af95117",
+		"58441808-dcbf-9001-4eeb-55d579deb543",
+		"946e56df-cd4e-060b-8447-b96f4a59c212",
+		"18a87033-0f19-e00a-e5cb-c52d40196335",
+		"24bcfcf7-d7b0-591c-03bf-7287fe521f3c",
+		"cfa806d8-224a-995a-9120-3444c74b28a6",
+		"7db29dcc-7cb5-e4a1-9ac7-683cbb12c25c",
+		"8ec8301b-a52d-bea9-235a-0ada066977bd"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 0,
+	"owner": "2588378",
+	"public": false,
+	"requests": [
 		{
+			"folder": null,
+			"id": "02dd9c7c-4473-eb1a-cca7-4551af080d94",
 			"name": "localhost:3003/api/pedido",
-			"request": {
-				"url": "localhost:3000/api/pedido",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoPedido",
-							"value": "XP99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][codigoProduto]",
-							"value": "PD02",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][nomeProduto]",
-							"value": "Whopper",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][descricaoProduto]",
-							"value": "Whopper Furioso",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][valorProduto]",
-							"value": "19.00",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][categoria]",
-							"value": "Lanches",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Pao",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Hamburguer",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Cebola Furiosa",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][codigoUsuario]",
-							"value": "USER-1",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][nomeUsuario]",
-							"value": "Pedro Gomes",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][loginUsuario]",
-							"value": "pgomes22@email.com",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][senhaUsuario]",
-							"value": "Passwd@1231",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][tipoUsuario]",
-							"value": "ADMIN",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "usuarioPedido[0][statusUsuario]",
-							"value": "ATIVO",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "statusPedido",
-							"value": "SOLICITADO",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "mesaPedido",
-							"value": "Mesa-01",
-							"description": "",
-							"type": "text"
-						},
-						{
-							"key": "totalPedido",
-							"value": "10.00",
-							"description": "",
-							"type": "text"
-						}
-					]
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoPedido",
+					"value": "XP99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
 				},
-				"description": "Cadastro de Pedido"
-			},
-			"response": []
+				{
+					"key": "itensPedido[0][codigoProduto]",
+					"value": "PD02",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][nomeProduto]",
+					"value": "Whopper",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][descricaoProduto]",
+					"value": "Whopper Furioso",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][valorProduto]",
+					"value": "19.00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][categoria]",
+					"value": "Lanches",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Pao",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Hamburguer",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Cebola Furiosa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][codigoUsuario]",
+					"value": "USER-1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][nomeUsuario]",
+					"value": "Pedro Gomes",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][loginUsuario]",
+					"value": "pgomes22@email.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][senhaUsuario]",
+					"value": "Passwd@1231",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][tipoUsuario]",
+					"value": "ADMIN",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "usuarioPedido[0][statusUsuario]",
+					"value": "ATIVO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "statusPedido",
+					"value": "SOLICITADO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mesaPedido",
+					"value": "Mesa-01",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "totalPedido",
+					"value": "10.00",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Cadastro de Pedido",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "localhost:3000/api/pedido",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
 		},
 		{
-			"name": "localhost:3003/api/pedido",
-			"request": {
-				"url": "localhost:3000/api/pedido/",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoPedido",
-							"value": "XP99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "produto",
-							"value": "Batata Frita",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido",
-							"value": "Paulo",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusPedido",
-							"value": "SOLICITADO",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "mesaPedido",
-							"value": "M5",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "totalPedido",
-							"value": "7.50",
-							"type": "text",
-							"description": ""
-						}
-					]
-				},
-				"description": "Obter todos os pedidos"
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3003/api/pedido",
-			"request": {
-				"url": {
-					"raw": "localhost:3000/api/pedido/:id",
-					"host": [
-						"localhost"
-					],
-					"port": "3000",
-					"path": [
-						"api",
-						"pedido",
-						":id"
-					],
-					"query": [],
-					"variable": [
-						{
-							"key": "id",
-							"value": "59bdeedb52beef2146e7b199"
-						}
-					]
-				},
-				"method": "PUT",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoPedido",
-							"value": "XP99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][codigoProduto]",
-							"value": "PD01",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][nomeProduto]",
-							"value": "Cachorro-Quente",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][descricaoProduto]",
-							"value": "Cachorro-quente tradicional da casa",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][valorProduto]",
-							"value": "8.99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][categoria]",
-							"value": "Lanches",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Pao",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Salsicha",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[0][itens]",
-							"value": "Mostarda",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][codigoUsuario]",
-							"value": "USER-2",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][nomeUsuario]",
-							"value": "Joao Paulo",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][loginUsuario]",
-							"value": "jp@email.com",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][senhaUsuario]",
-							"value": "Passwd@1231",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][tipoUsuario]",
-							"value": "ADMIN",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido[0][statusUsuario]",
-							"value": "ATIVO",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][codigoProduto]",
-							"value": "PD03",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][nomeProduto]",
-							"value": "Whoppeeeer",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][descricaoProduto]",
-							"value": "Whopper Furioso",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][valorProduto]",
-							"value": "19.99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][categoria]",
-							"value": "Lanches",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][itens]",
-							"value": "Pao",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][itens]",
-							"value": "Carne whopper",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][itens]",
-							"value": "Cebola Furiosa",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[1][itens]",
-							"value": "Molho Furioso",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][codigoProduto]",
-							"value": "PD03",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][nomeProduto]",
-							"value": "Batata Frita",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][descricaoProduto]",
-							"value": "Batata Frita com molho",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][valorProduto]",
-							"value": "9.99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][categoria]",
-							"value": "Lanches",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "itensPedido[2][itens]",
-							"value": "1UN - Batata Frita",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusPedido",
-							"value": "SOLICITADO",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "mesaPedido",
-							"value": "Mesa-01",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "totalPedido",
-							"value": "38.97",
-							"type": "text",
-							"description": ""
-						}
-					]
-				},
-				"description": "Atualização de Pedido"
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3003/api/produto",
-			"request": {
-				"url": "localhost:3000/api/produto/",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoPedido",
-							"value": "XP99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "produto",
-							"value": "Cachorro Quente com Mostarda",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido",
-							"value": "Pedro Gomes",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusPedido",
-							"value": "EM ANDAMENTO",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "mesaPedido",
-							"value": "M5",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "totalPedido",
-							"value": "10.00",
-							"type": "text",
-							"description": ""
-						}
-					]
-				},
-				"description": "Cadastro de Produto"
-			},
-			"response": []
-		},
-		{
-			"name": "localhost:3003/api/produto",
-			"request": {
-				"url": "localhost:3000/api/produto/",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoPedido",
-							"value": "XP99",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "produto",
-							"value": "Cachorro Quente com Mostarda",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "usuarioPedido",
-							"value": "Pedro Gomes",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusPedido",
-							"value": "EM ANDAMENTO",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "mesaPedido",
-							"value": "M5",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "totalPedido",
-							"value": "10.00",
-							"type": "text",
-							"description": ""
-						}
-					]
-				},
-				"description": "Cadastro de Produto"
-			},
-			"response": []
-		},
-		{
+			"folder": null,
+			"id": "18a87033-0f19-e00a-e5cb-c52d40196335",
 			"name": "localhost:3003/api/usuario",
-			"request": {
-				"url": "localhost:3000/api/usuario",
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoUsuario",
-							"value": "USER-01",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "nomeUsuario",
-							"value": "Pedro Gomes",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "loginUsuario",
-							"value": "pgomes22",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "senhaUsuario",
-							"value": "abcde1234",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "tipoUsuario",
-							"value": "ADMIN",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusUsuario",
-							"value": "ATIVO",
-							"type": "text",
-							"description": ""
-						}
-					]
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoUsuario",
+					"value": "USER-01",
+					"type": "text",
+					"enabled": true,
+					"description": ""
 				},
-				"description": "Cadastro de Pedido"
-			},
-			"response": []
+				{
+					"key": "nomeUsuario",
+					"value": "Pedro Gomes",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loginUsuario",
+					"value": "pgomes22",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "senhaUsuario",
+					"value": "abcde1234",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "tipoUsuario",
+					"value": "ADMIN",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "statusUsuario",
+					"value": "ATIVO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Cadastro de Pedido",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "localhost:3000/api/usuario",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
 		},
 		{
+			"folder": null,
+			"id": "24bcfcf7-d7b0-591c-03bf-7287fe521f3c",
 			"name": "localhost:3003/api/usuario",
-			"request": {
-				"url": "localhost:3000/api/usuario",
-				"method": "GET",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
-						"description": ""
-					}
-				],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "codigoUsuario",
-							"value": "USER-01",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "nomeUsuario",
-							"value": "Pedro Gomes",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "loginUsuario",
-							"value": "pgomes22",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "senhaUsuario",
-							"value": "abcde1234",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "tipoUsuario",
-							"value": "ADMIN",
-							"type": "text",
-							"description": ""
-						},
-						{
-							"key": "statusUsuario",
-							"value": "ATIVO",
-							"type": "text",
-							"description": ""
-						}
-					]
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoUsuario",
+					"value": "USER-01",
+					"type": "text",
+					"enabled": true,
+					"description": ""
 				},
-				"description": "Consultar Usuario"
+				{
+					"key": "nomeUsuario",
+					"value": "Pedro Gomes",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "loginUsuario",
+					"value": "pgomes22",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "senhaUsuario",
+					"value": "abcde1234",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "tipoUsuario",
+					"value": "ADMIN",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "statusUsuario",
+					"value": "ATIVO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Consultar Usuario",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:3000/api/usuario",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
+		},
+		{
+			"folder": null,
+			"id": "5036d78d-0bb3-396f-a232-a9678af95117",
+			"name": "localhost:3003/api/pedido",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoPedido",
+					"value": "XP99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][codigoProduto]",
+					"value": "PD01",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][nomeProduto]",
+					"value": "Cachorro-Quente",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][descricaoProduto]",
+					"value": "Cachorro-quente tradicional da casa",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][valorProduto]",
+					"value": "8.99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][categoria]",
+					"value": "Lanches",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Pao",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Salsicha",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[0][itens]",
+					"value": "Mostarda",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][codigoUsuario]",
+					"value": "USER-2",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][nomeUsuario]",
+					"value": "Joao Paulo",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][loginUsuario]",
+					"value": "jp@email.com",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][senhaUsuario]",
+					"value": "Passwd@1231",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][tipoUsuario]",
+					"value": "ADMIN",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido[0][statusUsuario]",
+					"value": "ATIVO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][codigoProduto]",
+					"value": "PD03",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][nomeProduto]",
+					"value": "Whoppeeeer",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][descricaoProduto]",
+					"value": "Whopper Furioso",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][valorProduto]",
+					"value": "19.99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][categoria]",
+					"value": "Lanches",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][itens]",
+					"value": "Pao",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][itens]",
+					"value": "Carne whopper",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][itens]",
+					"value": "Cebola Furiosa",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[1][itens]",
+					"value": "Molho Furioso",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][codigoProduto]",
+					"value": "PD03",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][nomeProduto]",
+					"value": "Batata Frita",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][descricaoProduto]",
+					"value": "Batata Frita com molho",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][valorProduto]",
+					"value": "9.99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][categoria]",
+					"value": "Lanches",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itensPedido[2][itens]",
+					"value": "1UN - Batata Frita",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "statusPedido",
+					"value": "SOLICITADO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "mesaPedido",
+					"value": "Mesa-01",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "totalPedido",
+					"value": "38.97",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Atualização de Pedido",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "PUT",
+			"pathVariables": {
+				"id": "59bdeedb52beef2146e7b199"
 			},
-			"response": []
+			"url": "localhost:3000/api/pedido/:id",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": "59bdeedb52beef2146e7b199"
+				}
+			],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
+		},
+		{
+			"id": "58441808-dcbf-9001-4eeb-55d579deb543",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:3003/api/produtos/",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "codigoProduto",
+					"value": "PRD01",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "nomeProduto",
+					"value": "Cachorro Quente",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "descricaoProduto",
+					"value": "Cachorro Quente com Mostarda",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "valorProduto",
+					"value": "15.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "categoria",
+					"value": "Lanches",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "itens[0]",
+					"value": "Pao",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "estabelecimento_id",
+					"value": "59e5587c7f40702e5c84cc52",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itens[1]",
+					"value": "Salcicha",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "itens[2]",
+					"value": "Mostarda\n",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508203364192,
+			"name": "localhost:3003/api/produto",
+			"description": "Cadastro de Produto",
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
+			"responses": []
+		},
+		{
+			"id": "7db29dcc-7cb5-e4a1-9ac7-683cbb12c25c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3003/api/estabelecimentos/produtos/:id",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {
+				"id": "59e5587c7f40702e5c84cc52"
+			},
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": "59e5587c7f40702e5c84cc52"
+				}
+			],
+			"method": "GET",
+			"data": [
+				{
+					"key": "codigoEstabelecimento",
+					"value": "EST03",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nomeEstabelecimento",
+					"value": "Seu Boteco",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "enderecoEstabelecimento",
+					"value": "Av. Alfredo Lisboa, s/n - Recife, PE, 50020-360",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "statusEstabelecimento",
+					"value": "ATIVO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1508812668471,
+			"name": "localhost:3003/api/estabelecimentos",
+			"description": "Consulta de estabelecimentos.",
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
+			"responses": []
+		},
+		{
+			"id": "8ec8301b-a52d-bea9-235a-0ada066977bd",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3003/api/estabelecimentos/produtos/:id",
+			"queryParams": [],
+			"pathVariables": {
+				"id": "59e5587c7f40702e5c84cc52"
+			},
+			"pathVariableData": [
+				{
+					"key": "id",
+					"value": "59e5587c7f40702e5c84cc52"
+				}
+			],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
+			"data": [
+				{
+					"key": "codigoEstabelecimento",
+					"value": "EST03",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nomeEstabelecimento",
+					"value": "Seu Boteco",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "enderecoEstabelecimento",
+					"value": "Av. Alfredo Lisboa, s/n - Recife, PE, 50020-360",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "statusEstabelecimento",
+					"value": "ATIVO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "localhost:3003/api/estabelecimentos/produtos/:id",
+			"description": "Consulta de produtos por id do estabelecimento.",
+			"descriptionFormat": "html",
+			"time": 1508812698844,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"folder": null,
+			"id": "92a879ad-85e6-0c56-5c1a-0b22e63c79a5",
+			"name": "localhost:3003/api/pedido",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoPedido",
+					"value": "XP99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "produto",
+					"value": "Batata Frita",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido",
+					"value": "Paulo",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "statusPedido",
+					"value": "SOLICITADO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "mesaPedido",
+					"value": "M5",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "totalPedido",
+					"value": "7.50",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Obter todos os pedidos",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:3000/api/pedido/",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
+		},
+		{
+			"folder": null,
+			"id": "946e56df-cd4e-060b-8447-b96f4a59c212",
+			"name": "localhost:3003/api/produto",
+			"dataMode": "urlencoded",
+			"data": [
+				{
+					"key": "codigoPedido",
+					"value": "XP99",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "produto",
+					"value": "Cachorro Quente com Mostarda",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "usuarioPedido",
+					"value": "Pedro Gomes",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "statusPedido",
+					"value": "EM ANDAMENTO",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "mesaPedido",
+					"value": "M5",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "totalPedido",
+					"value": "10.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": "Cadastro de Produto",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:3000/api/produto/",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": "{}",
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"responses": [],
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c"
+		},
+		{
+			"id": "cfa806d8-224a-995a-9120-3444c74b28a6",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3003/api/estabelecimentos",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "codigoEstabelecimento",
+					"value": "EC04",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "nomeEstabelecimento",
+					"value": "Estabelecimento Teste com Produto",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "enderecoEstabelecimento",
+					"value": "Rua A",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "statusEstabelecimento",
+					"value": "ATIVO",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "produtos",
+					"value": "59c9985cdb784321545f3bf3",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1507829704985,
+			"name": "localhost:3003/api/estabelecimentos",
+			"description": "Cadastro de um estabelecimento",
+			"collectionId": "842f639b-0fdb-7402-de07-bf8f6766ac9c",
+			"responses": []
 		}
 	]
 }
