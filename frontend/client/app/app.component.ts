@@ -9,9 +9,9 @@ import { Http } from '@angular/http';
 
 export class AppComponent{
 
-    fotos: Array<Object> = [];
+    // fotos: Array<Object> = [];
 
-    constructor(http: Http) {
+    //constructor(http: Http) {
 
 /*         let stream = http.get('http://localhost:3003/api/pedido');
         stream.subscribe(function(res) {
@@ -19,13 +19,13 @@ export class AppComponent{
             console.log(this.fotos);
         }, erro => console.log(erro)); */
 
-        http
-        .get('http://localhost:3003/api/produto')
-        .map(res => res.json())
-        .subscribe(fotos => {
-            this.fotos = fotos;
-            console.log(this.fotos);            
-        }, erro => console.log(erro));
+        // http
+        // .get('http://localhost:3003/api/produto')
+        // .map(res => res.json())
+        // .subscribe(fotos => {
+        //     this.fotos = fotos;
+        //     console.log(this.fotos);            
+        // }, erro => console.log(erro));
 
-    }
+   // }
 }

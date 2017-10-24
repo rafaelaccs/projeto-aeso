@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="icon" href="favicon-16x16.png"> -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/vendor/modernizr.custom.45655.js"></script>
+
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(function (err) { console.error(err); });
+    </script>
+</head>
+
+<body>
+    <section class="main-section" data-group='tabs'>
+        <nav class="left">
+            <ul class="">
+                <li class="logo">BarGennius</li>
+                <li role="presentation" class="item" data-click='home'>                
+                    <i class="fa fa-home" aria-hidden="true"></i><h3>Home</h3>
+                </li>
+                <li role="presentation" class="item" data-click='mesas'>                
+                    <i class="fa fa-desktop" aria-hidden="true"></i><h3>Mesas</h3>
+                </li>
+                <li role="presentation" class="item" data-click='categorias'>
+                    <i class="fa fa-book" aria-hidden="true"></i><h3>Categorias</h3>
+                </li>
+                <li role="presentation" class="item" data-click='produtos'>                
+                    <i class="fa fa-beer" aria-hidden="true"></i><h3>Produtos</h3>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="left-push"></div>
+        
+
+        <div class="dashboard">
+            <nav class="dashboard-nav">
+                <a href="#" class="user">
+                    <img src="img/user.png" alt="imagem usuário">
+                    <p>João Maneiro</p>
+                </a>
+
+
+            </nav>
+
+            <div class="details" id="mesas" data-target="home">
+                <h2>Home</h2>
+                <div class="allboxes">
+                    
+                    <div class="boxed">
+                        <div class="box-head empreparo">
+                            <h4>Mesa 02</h4>
+                        </div>
+                        <div class="box-body">
+                            <ul>
+                                <li>Burguer</li>
+                                <li>Refri</li>
+                                <li>Batata-frita</li>
+                                <li>Onion Ring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxed">
+                        <div class="box-head">
+                            <h4>Mesa 07</h4>
+                        </div>
+                        <div class="box-body">
+                            <ul>
+                                <li>Burguer</li>
+                                <li>Refri</li>
+                                <li>Batata-frita</li>
+                                <li>Onion Ring</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxed">
+                        <div class="box-head pronto">
+                            <h4>Mesa 05</h4>
+                        </div>
+                        <div class="box-body">
+                            <ul>
+                                <li>Burguer</li>
+                                <li>Refri</li>
+                                <li>Batata-frita</li>
+                                <li>Onion Ring</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="details" id="mesas" data-target="mesas">
+                <h2>Mesas</h2>
+
+                <div class="flex-box">
+                    <div class="box-categoria col-30">
+                        <h4>Adicionar novo</h4>
+                        <form action="">
+                            <br>
+                            <label for="nome">Cód</label> <br>
+                            <input type="text" name="cod" id="cod"><br>
+                            <label for="nome">Nome</label> <br>
+                            <input type="text" name="nome" id="nome"><br>
+                            <button type="submit" class="btn btn-salvar" >Enviar</button>
+                        </form>
+                    </div>
+                    <div class="box-categoria col-70">
+                        <h4>Lista Mesas</h4>
+                        <table class="table">
+                            <tr>
+                                <th>Cód</th>
+                                <th>Nome</th>
+                                <th>Excluir</th>
+                            </tr>
+                            <tr>
+                                <td>m-01</td>
+                                <td>Mesa 01</td>
+                                <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>m-02</td>
+                                <td>Mesa 02</td>
+                                <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            </tr>
+                            
+                            
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details" id="categorias" data-target="categorias">
+                <h2>Categorias</h2>                          
+                <div class="flex-box">
+                    <div class="box-categoria col-30">
+                        <h4>Adicionar novo</h4>
+                        <form action="">
+                            <br>
+                            <label for="nome">Nome</label> <br>
+                            <input type="text" name="nome" id="nome"><br>
+                            <button type="submit" class="btn btn-salvar" >Enviar</button>
+                        </form>
+                    </div>
+                    <div class="box-categoria col-70">
+                        <h4>Lista Categorias</h4>
+                        <table class="table">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Excluir</th>
+                            </tr>
+                            <tr>
+                                <td>Comida</td>
+                                <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+
+            <div class="details" id="produtos" data-target="produtos">
+                <h2>Produtos</h2>
+                <div class="flex-box">
+                    <div class="box-categoria col-30">
+                        <h4>Adicionar novo</h4>
+                        <form action="">
+                            <br>
+                            <label for="nome">Cód</label> <br>
+                            <input type="text" name="cod" id="cod"><br>
+                            <label for="nome">Nome</label> <br>
+                            <input type="text" name="nome" id="nome"><br>
+                            <label for="nome">Preço</label> <br>
+                            <input type="number" name="preco" id="preco"><br>
+                            <label for="categorias">Categoria</label>
+                            <select name="categorias" id="categoria">
+                                <option value="comida">Comida</option>
+                                <option value="bebida">Bebida</option>
+                            </select><br>
+                            <button type="submit" class="btn btn-salvar" >Enviar</button>                            
+                        </form>
+                    </div>
+                    <div class="box-categoria col-70">
+                        <h4>Lista Produtos</h4>
+                        <table class="table">
+                            <tr>
+                                <th>Cód</th>
+                                <th>Nome </th>
+                                <th>Descrição</th>
+                                <th>Itens </th>
+                                <th>Categoria</th>
+                                <th>Valor </th>
+                                <th>Excluir</th>
+                            </tr>
+                            <tr *ngFor="let foto of fotos">
+                                <td>{{ tabela.codigoProduto }}</td>
+                                <td>{{ tabela.nomeProduto }}</td>
+                                <td>
+                                    <ol *ngFor="let item of tabela.itens">
+                                        <li>{{ item }}</li>
+                                    </ol>
+                                </td>
+                                <td>{{ tabela.categoria }}</td>
+                                <td>{{ tabela.valorProduto }}</td>
+                                <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        
+        
+
+
+
+    </section>
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script> -->
+    <script type="text/javascript" src="js/libs/jquery.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

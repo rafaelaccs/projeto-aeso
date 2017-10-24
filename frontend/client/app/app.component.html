@@ -1,25 +1,8 @@
+<section class="main-section" data-group='tabs'>
+    <lateral></lateral>
 
-<table class="table">
-    <tr>
-        <th>Cód</th>
-        <th>Nome </th>
-        <th>Descrição</th>
-        <th>Itens </th>
-        <th>Categoria</th>
-        <th>Valor </th>
-        <th>Excluir</th>
-    </tr>
-    <tr *ngFor="let foto of fotos">
-        <td>{{ foto.codigoProduto }}</td>
-        <td>{{ foto.nomeProduto }}</td>
-        <td>{{ foto.descricaoProduto }}</td>
-        <td>
-            <ol *ngFor="let item of foto.itens">
-                <li>{{ item }}</li>
-            </ol>
-        </td>
-        <td>{{ foto.categoria }}</td>
-        <td>{{ foto.valorProduto }}</td>
-        <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
-    </tr>
-</table>
+    <corpo></corpo>
+
+</section>
+
+

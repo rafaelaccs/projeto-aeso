@@ -9,15 +9,15 @@
         <th>Excluir</th>
     </tr>
     <tr *ngFor="let foto of fotos">
-        <td>{{ foto.codigoProduto }}</td>
-        <td>{{ foto.nomeProduto }}</td>
+        <td>{{ tabela.codigoProduto }}</td>
+        <td>{{ tabela.nomeProduto }}</td>
         <td>
-            <ol *ngFor="let item of foto.itens">
+            <ol *ngFor="let item of tabela.itens">
                 <li>{{ item }}</li>
             </ol>
         </td>
-        <td>{{ foto.categoria }}</td>
-        <td>{{ foto.valorProduto }}</td>
+        <td>{{ tabela.categoria }}</td>
+        <td>{{ tabela.valorProduto }}</td>
         <td><a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
     </tr>
 </table>

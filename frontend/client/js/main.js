@@ -20,3 +20,4 @@ $('[data-group]').each(function () {
     $(this).addClass(activeClass);
   });
 });
+
