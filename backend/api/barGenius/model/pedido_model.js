@@ -25,7 +25,7 @@ const usuarioPedido = new mongoose.Schema({
 
 var pedidoSchema = new mongoose.Schema({
     codigoPedido: {type: String, required: true},
-    itensPedido: [{type: produtoPedido, required: true}],
+    itensPedido: [produtoPedido],
     usuarioPedido: [usuarioPedido],
     statusPedido: {type: String, required: true, uppercase: true,
         enum: ['SOLICITADO', 'EM ANDAMENTO', 'SAIU PARA ENTREGA A MESA', 'ENTREGUE']},

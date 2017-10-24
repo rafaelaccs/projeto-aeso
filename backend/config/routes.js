@@ -30,6 +30,8 @@ module.exports = function(server){
 
   const produtosEstabelecimento = require('../api/barGenius/funcionalidades/fc_produtos_estabelecimento');
   produtosEstabelecimento.register(router, '/estabelecimentos/produtos');
-  //server.use('/api/estabelecimentos/produtos', router);
+  
+  const somatorioPedido = require('../api/barGenius/funcionalidades/fc_somatorio_pedidos');
+  router.route('/totalPedidos').get(somatorioPedido.sumPedido);
 
 }
