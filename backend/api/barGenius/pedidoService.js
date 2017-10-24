@@ -8,8 +8,8 @@ Pedido.methods(['get', 'post', 'put', 'delete']);
 Pedido.updateOptions({new: true, runValidators: true});
 
 //Faz alguma coisa com a requisição antes de realizar o put no banco
-Pedido.before('put', function(req, res, next){
-    console.log(req.body);
+Pedido.before('get', function(req, res, next){
+    console.log("Request: ", req.body);
     next();
 });
 

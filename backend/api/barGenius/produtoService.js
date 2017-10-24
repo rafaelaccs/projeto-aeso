@@ -1,9 +1,7 @@
-//const _ = require('lodash');
 const Produto = require('./model/produto_model');
 
 Produto.methods(['get', 'post', 'put', 'delete']);
 Produto.updateOptions({new: true, runValidators: true});
-
 
 Produto.route('count', function(req, res, next){
     Produto.count(function(error, value){
@@ -14,5 +12,6 @@ Produto.route('count', function(req, res, next){
         }
     });
 });
+
 
 module.exports = Produto;

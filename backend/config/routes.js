@@ -10,12 +10,19 @@ module.exports = function(server){
 
   //rotas da API
   const pedidoService = require('../api/barGenius/pedidoService');
-  pedidoService.register(router, '/pedido');
+  pedidoService.register(router, '/pedidos');
 
   const produtoService = require('../api/barGenius/produtoService');
-  produtoService.register(router, '/produto');
+  produtoService.register(router, '/produtos');
 
   const usuarioService = require('../api/barGenius/usuarioService');
-  usuarioService.register(router, '/usuario');
+  usuarioService.register(router, '/usuarios');
+
+  const estabelecimentoService = require('../api/barGenius/estabelecimentoService');
+  estabelecimentoService.register(router, '/estabelecimentos');
+
+  const produtosEstabelecimento = require('../api/barGenius/funcionalidades/fc_produtos_estabelecimento');
+  produtosEstabelecimento.register(router, '/estabelecimentos/produtos');
+  //server.use('/api/estabelecimentos/produtos', router);
 
 }
