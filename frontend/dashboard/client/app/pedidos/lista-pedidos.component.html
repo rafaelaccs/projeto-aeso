@@ -1,0 +1,11 @@
+
+<div class="boxed" *ngFor="let pedido of pedidos">
+    <div class="box-head {{pedido.statusPedido}}">
+        <h4>{{pedido.mesaPedido}}</h4>
+    </div>
+    <div class="box-body">
+        <ul *ngFor="let itens of pedido.itensPedido">
+            <li>{{itens.nomeProduto}}</li>
+        </ul>
+    </div>
+</div>

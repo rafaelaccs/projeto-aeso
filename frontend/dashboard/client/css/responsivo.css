@@ -14,12 +14,13 @@
   }
 
   header{
-      background-color: #474747;
-      height: 80px;
-      font-size: 1.5em;
-      padding-top: 38px;
-      padding-left: 20px;
-      color:#f1f1f1;
+    background: #3eaca8;
+    background-image: linear-gradient(15deg, #80d0c7 0%, #3eaca8 100%);
+    height: 80px;
+    font-size: 1.5em;
+    padding-top: 38px;
+    padding-left: 20px;
+    color:#f1f1f1;
   }
 
   a, a:hover, a:visited, a:active, a:link{
@@ -49,7 +50,7 @@
       margin: 20px auto;
       /*margin: 20px 8px;*/
       padding:60px 40px;
-      border-radius: 15px;
+      border-radius: 4px;
       text-align: center;
       font-size: 1.5em;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -276,18 +277,25 @@
 /*Tela de telefone*/
 @media only screen and (max-width:767px){
   /*Cabeçalho*/
+
+  h1,h2,h3,h4,h5,h6{
+    
+    font-family: 'Squada One', cursive;
+    
+  }
   body{
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
   }
 
   header{
-      background-color: #474747;
-      height: 80px;
-      font-size: 1.5em;
-      padding-top: 38px;
-      padding-left: 20px;
-      color:#f1f1f1;
+    background: #3eaca8;
+    background-image: linear-gradient(15deg, #80d0c7 0%, #3eaca8 100%);
+    height: 80px;
+    font-size: 1.5em;
+    padding-top: 38px;
+    padding-left: 20px;
+    color:#f1f1f1;
   }
 
   a, a:hover, a:visited, a:active, a:link{
@@ -296,7 +304,8 @@
   }
 
   .titulo-mesa{
-      margin-left:8px;
+    font-family: 'Squada One', cursive;
+    margin-left:8px;
   }
 
   .fa-bars{
@@ -313,11 +322,11 @@
   .col-2{
       width: calc(100%/2 - 8%);
       display: block;
-      background-color: #999;
+      background-color: #c1c1c1;
       margin: 20px auto;
       /*margin: 20px 8px;*/
       padding: 20px;
-      border-radius: 15px;
+      border-radius: 4px;
       text-align: center;
       font-size: 1.2em;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -514,7 +523,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #bbb;
+    background-color: #333;
     padding: 14px 0;
   }
 
@@ -525,8 +534,8 @@
 
   footer ul li{
     display: inline-block;
-    padding: 8px;
-    background-color: #999;
+    padding: 8px !important;
+    /* background-color: #999; */
     border-radius: 5px;
     margin:0 20px ;
   }

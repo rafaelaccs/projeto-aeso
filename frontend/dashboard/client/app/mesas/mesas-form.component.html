@@ -1,0 +1,8 @@
+<form (submit)="cadastrar($event)">
+    <br>
+    <label for="nome">Cód</label> <br>
+    <input [(ngModel)]="mesa.codigo" type="text" name="codigo" id="codigo"><br>
+    <label for="nome">Nome</label> <br>
+    <input [(ngModel)]="mesa.nome" type="text" name="nome" id="nome"><br>
+    <button type="submit" class="btn btn-salvar">Enviar</button>
+</form>

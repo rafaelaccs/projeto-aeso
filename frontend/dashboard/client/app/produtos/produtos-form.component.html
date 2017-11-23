@@ -1,0 +1,76 @@
+<form [formGroup]="meuForm" (submit)="cadastrar($event)">
+    <br>
+    <label for="nome">Cód</label> <br> 
+
+    <input 
+        
+        formControlName="codigo"
+        [(ngModel)]="produto.codigoProduto" 
+        type="text" 
+        name="codigoProduto" 
+        id="codigoProduto"><br>
+
+    <div *ngIf="meuForm.controls.codigo.invalid">
+
+        <span *ngIf="meuForm.controls.codigo.errors.required" class="form-control alert-danger">
+            Código Obrigatório
+        </span>
+
+        <span *ngIf="meuForm.controls.codigo.errors.minlength" class="form-control alert-danger">
+            Deve ter no mínimo 4 caracteres
+        </span>
+    
+    </div> 
+        
+    
+
+    <label for="nome">Nome</label> <br>
+
+    <input 
+        
+        formControlName="nome"
+        [(ngModel)]="produto.nomeProduto" 
+        type="text" 
+        name="nomeProduto" 
+        id="nomeProduto"><br>
+
+    <span *ngIf="meuForm.controls.nome.invalid" class="form-control alert-danger">
+        Nome Obrigatório
+    </span>
+
+    <label for="nome">Preço</label> <br>
+
+    <input 
+             
+        formControlName="valor"  
+        [(ngModel)]="produto.valorProduto"
+        step="0.01" 
+        type="number" 
+        name="valorProduto" 
+        id="valorProduto"><br>
+
+    <span *ngIf="meuForm.controls.valor.invalid" class="form-control alert-danger">
+        Preço Obrigatório
+    </span>
+
+    <label for="categorias">Categoria</label>
+    
+    <select formControlName="categoria" [(ngModel)]="produto.categoria" name="categoria" id="categoria">
+        <option value="comida">Comida</option>
+        <option value="bebida">Bebida</option>
+    </select><br>
+
+    <!-- descrição -->
+    <label for="nome">Descrição</label> <br> 
+
+    <textarea 
+        formControlName="descricao"
+        [(ngModel)]="produto.descricaoProduto" 
+        name="descricaoProduto" 
+        id="descricaoProduto" 
+        cols="30" rows="10">
+
+    </textarea>
+    
+    <button [type]="submit" class="btn btn-salvar"  [disabled]="meuForm.invalid">Enviar</button>
+</form>

@@ -1,0 +1,27 @@
+<p *ngIf="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+<input #textoProcurado (keyup)="0" class="form-control" placeholder="filtrar pelo titulo do produto">
+<table class="table">
+    <tr>
+        <th>Cód</th>
+        <th>Nome </th>
+        <th>Descrição</th>
+        <!-- <th>Itens </th> -->
+        <th>Categoria</th>
+        <th>Valor </th>
+        <!-- <th>Editar</th> -->
+        <th>Excluir</th>
+    </tr>
+    <tr *ngFor="let produto of produtos | filtroPorTitulo: textoProcurado.value">
+        <td>{{ produto.codigoProduto }}</td>
+        <td>{{ produto.nomeProduto }}</td>
+        
+        <td>{{ produto.descricaoProduto }}</td>
+        <td>{{ produto.categoria }}</td>
+        <td>{{ produto.valorProduto }}</td>
+        <!-- <td><a  [routerLink]="['/produtos', produto._id]" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></td> -->
+        <td>
+            <!-- <button  (click)="remove(produto)"><i class="fa fa-trash" aria-hidden="true"></i></button> -->
+            <botao nome="X" estilo="btn-danger btn-block" (acao)="remove(produto)"></botao>
+        </td>
+    </tr>
+</table>

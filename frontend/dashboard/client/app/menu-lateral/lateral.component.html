@@ -1,18 +1,28 @@
 <nav class="left">
     <ul class="">
-        <li class="logo">BarGennius</li>
-        <li role="presentation" class="item" data-click='home'>                
-            <i class="fa fa-home" aria-hidden="true"></i><h3>Home</h3>
-        </li>
-        <li role="presentation" class="item" data-click='mesas'>                
-            <i class="fa fa-desktop" aria-hidden="true"></i><h3>Mesas</h3>
-        </li>
-        <li role="presentation" class="item" data-click='categorias'>
-            <i class="fa fa-book" aria-hidden="true"></i><h3>Categorias</h3>
-        </li>
-        <li role="presentation" class="item" data-click='produtos'>                
-            <i class="fa fa-beer" aria-hidden="true"></i><h3>Produtos</h3>
-        </li>
+        <a [routerLink]="['/']">
+            <li class="logo">BarGennius</li>        
+        </a>
+        
+        <a [routerLink]="['/']">
+            <li role="presentation" class="item" data-click='home'>                
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <h3>Home</h3>
+            </li>
+        </a>
+
+        <!-- <a [routerLink]="['/mesas']">
+            <li role="presentation" class="item" data-click='mesas'>    
+                <i class="fa fa-desktop" aria-hidden="true"></i>
+                <h3>Mesas</h3>
+            </li>
+        </a>      -->
+
+        <a [routerLink]="['/produtos']">
+            <li role="presentation" class="item" data-click='produtos'>                
+                <i class="fa fa-beer" aria-hidden="true"></i><h3>Produtos</h3>
+            </li>
+        </a>
     </ul>
 </nav>
 
