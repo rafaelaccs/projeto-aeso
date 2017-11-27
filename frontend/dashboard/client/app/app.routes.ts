@@ -4,13 +4,17 @@ import { AppComponent } from './app.component';
 import { MesasComponent } from './mesas/mesas.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { ClientComponent } from './cliente/cliente.component';
+import { ProdutosFormComponent } from "./produtos/produtos-form.component";
+import { ProdutosListagemComponent } from "./produtos/produtos-listagem.component";
 
 const appRoutes: Routes = [
 
     { path:'', component: PedidoComponent },
     { path:'mesas', component: MesasComponent },
-    { path:'produtos', component: ProdutosComponent },
-    { path:'produtos/:id', component: ProdutosComponent }
+    { path:'cadastrarproduto', component: ProdutosFormComponent},
+    { path:'produtos', component: ProdutosListagemComponent},
+    { path: 'cadastrarproduto/:id', component: ProdutosFormComponent },
+    { path:'**', component: PedidoComponent },
 
     // { 
     //     path: 'home',

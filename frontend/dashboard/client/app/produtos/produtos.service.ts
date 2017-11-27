@@ -19,9 +19,18 @@ export class ProdutosService {
 
     }
 
-    cadastra(produto:ProdutosComponent): Observable<Response>{
-        return this.http
-            .post(this.url, JSON.stringify(produto), { headers: this.headers });
+    cadastra(produto: ProdutosComponent): Observable<MensagemCadastro>{
+
+        if(produto._id){
+            return this.http
+                .put(this.url + '/' + produto._id, JSON.stringify(produto), {headers: this.headers})
+                .map(() => new MensagemCadastro('Foto alterada com sucesso', false));
+        } else {
+            return this.http
+                .post(this.url, JSON.stringify(produto), { headers: this.headers })
+                .map(() => new MensagemCadastro('Foto incluída com sucesso', true));
+        }
+
             
     }
 
@@ -41,5 +50,22 @@ export class ProdutosService {
         return this.http
             .get(this.url + '/' + id)
             .map(res => res.json());
+    }
+}
+
+export class MensagemCadastro{
+
+    constructor(private _mensagem: string, private _inclusao:boolean){
+
+        this._mensagem = _mensagem;
+        this._inclusao = _inclusao;
+    }
+
+    get mensagem(): string{
+        return this._mensagem;
+    }
+
+    get inclusao(): boolean{
+        return this._inclusao;
     }
 }

@@ -55,13 +55,22 @@ textarea{
 }
 
 .btn-salvar{
-    background-color: #80d0c7;
+    background-color: #547a82;
     color:#f1f1f1;
-    margin-top: 15px;
 }
 
 .btn-salvar:hover{
     background-color: #3eaca8;
+    color:#f1f1f1;
+}
+
+.btn-cancelar{
+    background-color: #fc6e5e;
+    color:#f1f1f1;
+}
+
+.btn-cancelar:hover{
+    background-color: #ff395e;
     color:#f1f1f1;
 }
 
@@ -212,6 +221,7 @@ textarea{
 
 .boxed{
     display: flex;
+    flex-direction: column;
     margin: 60px 30px 0 30px;
     width: calc(90%/3 - 3%);
     background: #c1c1c1;
@@ -219,21 +229,17 @@ textarea{
 }
 
 .boxed .box-head{
-    background-color: #a2d4ab;
+    background-color: #ff395e; 
     padding: 15px;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px 4px 0 0;
 }
 
-.boxed .box-head.empreparo{
+.boxed .box-head.EM_ANDAMENTO{
     background-color: #e5eec1 ;
-    padding: 15px;
-    border-radius: 4px 0 0 4px;
 }
 
-.boxed .box-head.pronto{
-    background-color: #ff395e ;
-    padding: 15px;
-    border-radius: 4px 0 0 4px;
+.boxed .box-head.ENTREGUE{
+    background-color: #a2d4ab ;
 }
 
 .boxed .box-head h4{

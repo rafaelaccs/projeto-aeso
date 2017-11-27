@@ -7,5 +7,6 @@
         <ul *ngFor="let itens of pedido.itensPedido">
             <li>{{itens.nomeProduto}}</li>
         </ul>
+        <button class="btn btn-salvar btn-block" (click)="alterarStatus(pedido)">Muda o Status</button>
     </div>
 </div>

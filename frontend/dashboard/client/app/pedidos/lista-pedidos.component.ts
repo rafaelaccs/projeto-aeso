@@ -23,5 +23,13 @@ export class ListaPedidosComponent{
 
     }
 
+    alterarStatus(pedido: PedidoComponent){
+        this.service
+            .alteraStatus(pedido)
+            .subscribe(res => {
+                console.log("Status Atualizado");
+            }, erro => console.log(erro));
+    }
+
     
 }

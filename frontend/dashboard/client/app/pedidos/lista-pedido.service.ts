@@ -35,4 +35,17 @@ export class PedidoService {
     remove(produto: PedidoComponent) {
         return this.http.delete(this.url + "/" + produto._id);
     }
+
+    alteraStatus(pedido:PedidoComponent){
+        if(pedido.statusPedido == "SOLICITADO"){
+            pedido.statusPedido = "EM_ANDAMENTO";
+        }else if(pedido.statusPedido == "EM_ANDAMENTO"){
+            pedido.statusPedido = "ENTREGUE";
+        }        
+
+        return this.http
+                .put(this.url + '/' + pedido._id, JSON.stringify(pedido), {headers: this.headers});
+                
+        
+    }
 }
